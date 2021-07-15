@@ -1,0 +1,117 @@
+[
+    {
+        "name": "timestamp",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "api_type",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "event_type",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "pcm_trigger_data",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pcm_trigger_priority",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "atr_trigger_data",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "report_json",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "is_tls",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "is_ipv6",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "request_accept_language",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "request_accept_charset",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "request_referer",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_continent_code",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_region",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_country_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_country_code",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_city",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_latitude",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_longitude",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_gmt_offset",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "geo_conn_speed",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "server_datacenter",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "server_region",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    }
+]
