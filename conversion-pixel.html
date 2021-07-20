@@ -1,0 +1,11 @@
+<script>
+    (function (w, e, pd, pp) {
+        var d = window[w].document,
+            i = d.getElementsByTagName('script')[0],
+            t = d.createElement('img');
+            t.style = 'visibility:hidden;';
+        t.async = true;
+        t.src = 'https://' + e + '/ingestly-attribution/pcm/?trigger_data=' + pd + '&trigger_priority=' + pp;
+        i.parentNode.insertBefore(t, i);
+    })('self', 'example.com', '00', '00');
+</script>
