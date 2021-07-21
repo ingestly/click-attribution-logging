@@ -1,6 +1,6 @@
 # Private Click Measurement & Attribution Reporting module for Ingestly
 
-As of 22nd Juky, 2021, this module only supports Safari's Private Click Measurement.
+As of 22nd July, 2021, this module only supports Safari's Private Click Measurement.
 Chrome's Attribution Reporting will be supported soon.
 
 
