@@ -20,7 +20,7 @@ See the guide for [Ingestly Endpoint](https://github.com/ingestly/ingestly-endpo
 On Fastly console, open "Conditions" menu then add a request condition by copy-and-paste below code.
 
 ```vcl
-(req.url ~ "^/ingestly-pixel/.*?/\?.*" || req.url ~ "^/\.well-known/(attribution-reporting|private-click-measurement)/.*")
+(req.url ~ "^/\.well-known/(attribution-reporting|private-click-measurement)/.*")
 ```
 
 ### 3. Create a new logging endpoint on Fastly
