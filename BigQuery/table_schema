@@ -5,6 +5,11 @@
         "mode": "REQUIRED"
     },
     {
+        "name": "endpoint_version",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
         "name": "api_type",
         "type": "STRING",
         "mode": "REQUIRED"
@@ -55,7 +60,47 @@
         "mode": "NULLABLE"
     },
     {
+        "name": "request_url",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
         "name": "request_referer",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_is_bot",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_bot_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_os_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_os_version",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_browser_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_browser_version",
         "type": "STRING",
         "mode": "NULLABLE"
     },
@@ -76,6 +121,11 @@
     },
     {
         "name": "geo_country_code",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+        {
+        "name": "geo_postal_code",
         "type": "STRING",
         "mode": "NULLABLE"
     },
