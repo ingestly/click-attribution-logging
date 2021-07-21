@@ -43,7 +43,7 @@ If your (eferrer side) domain is `report.destination`, and your client is `link.
     - `attributeon` should be `https://link.destination` (same with link destination)
     - `attributionDestination` should be `https://report.destination` (same with your website)
 
-```
+```html
 <a href="https://link.destination/"
 
 attributionSourceId="123"
