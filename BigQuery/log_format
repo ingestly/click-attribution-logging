@@ -14,7 +14,7 @@
   "request_url":"%{json.escape(req.url)}V",
   "request_referer":"%{json.escape(req.http.Referer)}V",
   "device_type":"%{json.escape(client.platform.hwtype)}V",
-  "device_is_bot":"%{client.class.bot}V",
+  "device_is_bot":%{if(client.class.bot, "true", "false")}V,
   "device_bot_name":"%{json.escape(client.bot.name)}V",
   "device_os_name":"%{json.escape(client.os.name)}V",
   "device_os_version":"%{json.escape(client.os.version)}V",
