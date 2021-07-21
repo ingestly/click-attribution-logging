@@ -30,7 +30,34 @@ On Fastly console, open "Conditions" menu then add a request condition by copy-a
 - Specify a table name for this module (must be matched with a table name you created as #1)
 - Copy & paste a log format from `./BigQuery/log_format` to the Fastly console.
 
-## Installation (Pixel)
+## Installation (Client)
+
+In this scenario,
+- "Referrer" is a news media website running Ads business. (Publisher)
+- "Destination" is an E-commerce website who is a customer of "Publisher". (Advertiser)
+
+### 1. Add attributes to the link tag on the Referrer side website.
+
+On the web page of Referrer side, add `attributionSourceId`, `attributeon` and `attributionDestination` to a link to the Destination.
+If your (eferrer side) domain is `report.destination`, and your client is `link.destination`:
+    - `attributeon` should be `https://link.destination` (same with link destination)
+    - `attributionDestination` should be `https://report.destination` (same with your website)
+
+```
+<a href="https://link.destination/"
+
+attributionSourceId="123"
+attributeon="https://link.destination"
+attributionDestination="https://report.destination"
+
+attributionsourceeventid="123"
+attributionreportto="https://report.destination"
+
+>A link to the destination</a>
+```
+### 2. Place a pixel tag to a "conversion" page on the destination website 
+
+On the web page of Destination side, add the following pixel tag to trigger the PCM reporting scheduling event.
 
 The PCM requires a "pixel" request for triggerring a PCM reporting.
 The pixel request must be redirected to a "well-known" structured URL with HTTP 302.
